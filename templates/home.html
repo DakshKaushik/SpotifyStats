@@ -1,0 +1,20 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Statify</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="home-container">
+        <div class="home-content">
+            <h1>Welcome to Statify</h1>
+            <p>Discover your top tracks, artists, and genres on Spotify!</p>
+            <p>Login to get personalized recommendations based on your listening habits.</p>
+            <a href="{{ url_for('login') }}" class="login-btn">Login with Spotify</a>
+        </div>
+    </div>
+</body>
+</html>
